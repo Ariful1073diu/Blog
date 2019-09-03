@@ -20,9 +20,11 @@ Class Database{
 		return false;
 	}
  }
-	
-	// Select or Read data
-	
+	/*
+	!!========================================
+	!! Select or Read data
+	!!========================================
+	*/
 	public function select($query){
 		$result = $this->link->query($query) or die($this->link->error.__LINE__);
 		if($result->num_rows > 0){
